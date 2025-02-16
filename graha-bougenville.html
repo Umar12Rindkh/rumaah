@@ -135,19 +135,19 @@
       </a>
     </div>
     <!-- Hero Section -->
-    <section class="relative">
+    <section class="relative w-full h-screen">
       <img
         src="Assets/navbar.png"
         alt="Hero Image"
-        class="w-full h-[500px] md:h-[600px] object-cover"
+        class="absolute inset-0 w-full h-full object-cover"
       />
       <div
-        class="absolute inset-0 bg-gray-900 bg-opacity-75 flex flex-col items-center justify-center"
+        class="absolute inset-0 bg-gray-900 bg-opacity-75 flex flex-col items-center justify-center min-h-screen px-4"
       >
-        <h1 class="text-white text-3xl font-bold uppercase">
+        <h1 class="text-white text-3xl font-bold uppercase text-center">
           Graha Bougenville
         </h1>
-        <div class="text-white mt-2">
+        <div class="text-white mt-2 text-center">
           <a class="text-white" href="index.html">Home</a>
           <span class="mx-2">&raquo;</span>
           <span class="text-orange-600">Graha Bougenville</span>
@@ -215,7 +215,7 @@
                   </div>
                   <div class="accordion-content hidden px-4 py-2 bg-white">
                     <ul class="list-disc pl-6 text-gray-700">
-                      <li>Batu Kali</li>
+                      <li>Batu Belah</li>
                     </ul>
                   </div>
                 </div>
@@ -362,7 +362,7 @@
                   </div>
                   <div class="accordion-content hidden px-4 py-2 bg-white">
                     <ul class="list-disc pl-6 text-gray-700">
-                      <li>Genteng</li>
+                      <li>Genteng Tanah Liat</li>
                     </ul>
                   </div>
                 </div>
@@ -485,7 +485,7 @@
               </div>
             </div>
             <div
-              class="mt-8 flex flex-col items-center justify-center space-y-10"
+              class="mt-8 flex flex-col items-center justify-center min-h-screen space-y-10"
             >
               <!-- Floorplan Images -->
               <div
@@ -499,7 +499,7 @@
                     <div
                       class="bg-white rounded-lg shadow-lg p-4 max-w-2xl w-full mx-auto"
                     >
-                      <div class="text-center mb-4 mt-5">
+                      <div class="text-center mb-4">
                         <span
                           class="bg-gray-700 text-white py-1 px-3 rounded-full text-sm"
                         >
@@ -522,7 +522,7 @@
                 class="siteplan hidden flex justify-center items-center w-full"
                 data-aos="fade-up"
               >
-                <div class="bg-white max-w-2xl w-full mx-auto text-center">
+                <div class="bg-white p-4 max-w-2xl w-full mx-auto text-center">
                   <span
                     class="bg-gray-700 text-white py-1 px-3 rounded-full text-sm"
                   >
@@ -657,6 +657,7 @@
         arrow.classList.toggle("rotate-180"); // Rotasi panah saat diklik
       }
     </script>
+        </script>
     <script>
       document
         .getElementById("menu-toggle")
