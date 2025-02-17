@@ -136,21 +136,26 @@
     </div>
     <!-- Hero Section -->
     <section class="relative w-full h-screen">
-      <img
-        src="Assets/navbar.png"
-        alt="Hero Image"
-        class="absolute inset-0 w-full h-full object-cover"
-      />
       <div
-        class="absolute inset-0 bg-gray-900 bg-opacity-75 flex flex-col items-center justify-center min-h-screen px-4"
+        class="relative w-full h-screen bg-cover bg-center"
+        style="
+          background-image: url('Assets/navbar1.jpg');
+          background-attachment: fixed;
+        "
       >
-        <h1 class="text-white text-3xl font-bold uppercase text-center">
-          Graha Bougenville
-        </h1>
-        <div class="text-white mt-2 text-center">
-          <a class="text-white" href="index.html">Home</a>
-          <span class="mx-2">&raquo;</span>
-          <span class="text-orange-600">Graha Bougenville</span>
+        <div
+          class="absolute inset-0 bg-gray-900 bg-opacity-75 flex flex-col items-center justify-center min-h-screen px-4"
+        >
+          <h1
+            class="animate-bounce text-2xl text-center font-bold md:text-4xl bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text"
+          >
+            GRAHA BOUGENVILE
+          </h1>
+          <div class="text-white mt-2 text-center">
+            <a class="text-white" href="index.html">Home</a>
+            <span class="mx-2">&raquo;</span>
+            <span class="text-orange-600">Graha Bougenville</span>
+          </div>
         </div>
       </div>
     </section>
@@ -596,13 +601,7 @@
         </div>
       </div>
     </footer>
-    <script>
-      document
-        .getElementById("menu-toggle")
-        .addEventListener("click", function () {
-          document.getElementById("mobile-menu").classList.toggle("hidden");
-        });
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
       function toggleView(view) {
         // Daftar semua elemen yang akan disembunyikan
@@ -629,9 +628,7 @@
           .getElementById(view + "Button")
           .classList.add("bg-blue-500", "hover:bg-blue-700");
       }
-    </script>
 
-    <script>
       document.querySelectorAll(".accordion-title").forEach((button) => {
         button.addEventListener("click", () => {
           const content = button.nextElementSibling;
@@ -640,15 +637,12 @@
           icon.classList.toggle("rotate-180");
         });
       });
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
+
       AOS.init({
         duration: 1000, // Durasi animasi dalam milidetik
         once: true, // Animasi hanya berjalan sekali
       });
-    </script>
-    <script>
+
       function toggleDropdown() {
         const dropdown = document.getElementById("dropdown-menu");
         const arrow = document.getElementById("arrow");
@@ -656,9 +650,7 @@
         dropdown.classList.toggle("hidden");
         arrow.classList.toggle("rotate-180"); // Rotasi panah saat diklik
       }
-    </script>
-        </script>
-    <script>
+
       document
         .getElementById("menu-toggle")
         .addEventListener("click", function () {
